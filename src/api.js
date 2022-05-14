@@ -3,6 +3,7 @@ const app = express()
 const server = require('http').createServer(app)
 const cors = require('cors')
 const SerpApi = require('google-search-results-nodejs');
+const serverless = require("serverless-http");
 const search = new SerpApi.GoogleSearch("b24da6785adb04a15da43433762b199d4bacf41294bde1fc671372593ee4310e");
 const router = express.Router();
 app.use(cors())
